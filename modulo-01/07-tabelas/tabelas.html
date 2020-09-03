@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br  ">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabelas</title>
+
+    <style>
+        table, th, td {border: 1px solid #000;}
+        th, td {padding: 7px;}
+        .nome {background-color: red;}
+        .email {background-color: green;}
+        .telefone {background-color: blue;}
+        .cargo {background-color:yellow;}
+    </style>
+</head>
+<body>
+    <h1>Tabelas</h1>
+    <table>
+        <caption>Cadastro de Clientes</caption>
+
+        <colgroup>
+        <col class="nome">
+        <col class="email">
+        <col class="telefone">
+        <col class="cargo">
+        </colgroup>
+
+        <thead>
+        <tr>
+            <th>Nome:</th>
+            <th>E-mail:</th>
+            <th>Telefone:</th>
+            <th>Cargo</th>
+        </tr>
+        </thead>
+
+        <tbody>
+        <tr>
+            <td>Lucas Braga</td>
+            <td>myemail@email.com</td>
+            <td>(66)99999-1234</td>
+            <td rowspan="2">Desenvolvedor Web</td>
+        </tr>
+
+        <tr>
+            <td>Abrahan Lincoln</td>
+            <td>lincoln.abrh@email.com</td>
+            <td>(47)99636-4873</td>
+        </tr>
+        </tbody>
+
+        <tfoot>
+        <tr>
+            <td colspan="4">Total: 2</td>
+        </tr>
+        </tfoot>
+    </table>
+</body>
+</html>

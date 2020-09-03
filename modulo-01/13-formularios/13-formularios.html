@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulários</title>
+</head>
+<body>
+    <form action="cadastro.php" method="GET">
+
+    <fieldset>
+        <legend> Informações pessoais </legend> 
+        Nome: <br>
+        <input type="text" name="nome" autofocus required maxlength="15"> <br>
+        Senha: <br>
+        <input type="password" name="senha" minlength="8" placeholder="Mínimo 8 caracteres" > <br>
+        E-mail: <br>
+        <input type="email" name="email" required autocomplete="on" placeholder="exemplo@email.com"><br>
+        Time: <br>
+        <input type="radio" name="time" value="flamengo"> Flamengo <br>
+        <input type="radio" name="time" value="vasco"> Vasco <br>
+        <input type="radio" name="time" value="corinthians" checked> Corinthians <br>
+        <input type="radio" name="time" value="sao-paulo"> São Paulo <br>
+        Cores: <br>
+        <input type="checkbox"> Vermelho <br>
+        <input type="checkbox" checked> Verde <br>
+        <input type="checkbox"> Azul <br>
+        Quantidade: <br>
+        <input type="number" name="quantidade" min="0" max="100" step="10"> <br>
+        <input type="range" name="range"> <br>
+        Seletor de cor: <br>
+        <input type="color"> <br>
+        <br>
+        Imagem: <br>
+        <input type="file" name="imagem"> <br>
+        <input type="hidden" name="id"> <br>
+        URL: <br>
+        <input type="url" name="site">  <br>
+        Search: <br>
+        <input type="search" name="pesquisa"> <br>
+        Telefone: <br>
+        <input type="tel" name="telefone"> <br>
+        Data: <br>
+        <input type="date" name="data" min="2000-12-31" max="2015-12-31">
+        Hora: <br>
+        <input type="time" name="hora"> <br>
+        Mês e ano: <br>
+        <input type="month" name="mes-ano"> <br>
+        Semana: <br>
+        <input type="week" name="semana"> <br>
+        Data e hora: <br>
+        <input type="datetime-local" name="data-e-hora"> <br>
+        Mensagem: <br>
+        <textarea name="mensagem" cols="30" rows="5" spellcheck="false"></textarea>
+        <button type="button">Clique aqui</button> <br>
+        Escolha seu veículo: <br>
+        <select name="veiculo">
+            <optgroup label="Carros">
+                <option value="camaro"> Camaro </option>
+                <option value="hilux"> Hilux </option>
+            </optgroup>
+            <optgroup label="Motos">
+                <option value="pop100" selected> Pop 100 </option>
+                <option value="zig50"> Zig-50 </option>
+            </optgroup>
+        </select>
+<br>
+
+        Escolha um curso: <br>
+        
+        <input name="cursos" list="lista-cursos">
+        <datalist id="lista-cursos">
+            <option value="HTML5"></option>
+            <option value="CSS3"></option>
+            <option value="PHP"></option>
+        </datalist>
+
+
+        <input type="submit" name="btn-enviar" value="Enviar"><br>
+    </fieldset> 
+
+    </form>
+    
+</body>
+</html>

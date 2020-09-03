@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <!--Formulário básico-->
+    <form id="form-cadastro"
+        action="cadastro.php"
+        method="POST"
+        enctype="application/x-www-form-urlencoded"
+        name="formulario-cadastro">
+        E-mail:
+        <input type="email" name="email" required>
+        <input type="submit" name="cadastrar" value="Cadastrar">
+    </form>
+
+    <!--Input fora do formulário-->
+    Nome:
+    <input type="text" name="nome" form="form-cadastro">
+
+    <!-- Atributo form action-->
+    <form id="form-cadastro" method="POST" enctype="application/x-www-form-urlencoded" name="formulario-cadastro">
+    E-mail:
+    <input type="email" name="email" required>
+    <input type="submit" name="cadastrar" formenctype="application/x-www-form-urlencoded" formmethod="GET" formaction="cadastrar.php">
+    <input type="submit" name="enviar-por-email" formtarget="_blank" formenctype="application/x-www-form-urlencoded" formmethod="POST" 
+    formaction="enviar-email.php" value="Enviar por e-mail" formnovalidate>
+</form>
+
+
+</body>
+</html>

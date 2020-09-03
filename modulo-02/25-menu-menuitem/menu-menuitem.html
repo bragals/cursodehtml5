@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Menu e menu item</title>
+    <style>
+        .elemento {width: 300px; background-color: #ccc;}
+    </style>
+</head>
+<body>
+
+    <div class="elemento" contextmenu="meu-menu">
+        <p>Obsoleta. Funciona somente no Firefox.</p>
+    </div>
+    
+    <menu type="context" id="meu-menu">
+        <menuitem> Atualizar </menuitem>
+        <menu label='Siga-mos'>
+            <menuitem icon="icons/facebook.png"> Facebook </menuitem>
+            <menuitem icon="icons/google.png"> Google </menuitem>
+        </menu>
+    </menu>
+</body>
+</html>
